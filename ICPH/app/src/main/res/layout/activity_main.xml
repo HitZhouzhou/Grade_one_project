@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        tools:ignore="UselessParent">
+
+        <RadioButton
+            android:checked="true"
+            android:textColor="@drawable/tab_textcolor_selector"
+            android:drawableTop="@drawable/recommendation_selector"
+            android:textSize="21sp"
+            android:id="@+id/tab_recommendation"
+            android:gravity="center"
+            android:padding="8dp"
+            android:button="@null"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="推荐" />
+
+        <RadioButton
+            android:id="@+id/tab_invitation"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/invitation_selector"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="帖子"
+            android:textColor="@drawable/tab_textcolor_selector"
+            android:textSize="21sp" />
+
+        <RadioButton
+            android:textColor="@drawable/tab_textcolor_selector"
+            android:drawableTop="@drawable/tool_selector"
+            android:gravity="center"
+            android:padding="8dp"
+            android:button="@null"
+            android:textSize="21sp"
+            android:id="@+id/tab_tool"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="工具" />
+
+        <RadioButton
+            android:textColor="@drawable/tab_textcolor_selector"
+            android:drawableTop="@drawable/material_selector"
+            android:gravity="center"
+            android:padding="8dp"
+            android:button="@null"
+            android:textSize="21sp"
+            android:id="@+id/tab_material"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="资料" />
+
+        <RadioButton
+            android:textColor="@drawable/tab_textcolor_selector"
+            android:drawableTop="@drawable/account_selector"
+            android:gravity="center"
+            android:padding="8dp"
+            android:button="@null"
+            android:textSize="21sp"
+            android:id="@+id/tab_account"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="账户" />
+
+    </RadioGroup>
+
+
+</RelativeLayout>
